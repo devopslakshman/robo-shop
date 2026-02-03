@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SG_ID="sg-076ec9ad23dab2b28" # replace with your ID
-AMI_ID="ami-0220d79f3f480ecf5"
-ZONE_ID="Z05013202FKF0ZL12WAOP"
-DOMAIN_NAME="daws88s.online"
+SG_ID="sg-076ec9ad23dab2b28" # replace with your security group  ID
+AMI_ID="ami-0220d79f3f480ecf5" # replace with your AMI_ID
+ZONE_ID="Z0124921233HXUIKL614B" # replace with your hosted zone ID
+DOMAIN_NAME="yasmitha.co.in" # replace your DOMAIN_NAME
 
 for instance in $@
 do
