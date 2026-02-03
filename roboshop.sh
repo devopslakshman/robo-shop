@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SG_ID="sg-076ec9ad23dab2b28" # replace with your security group  ID
+SG_ID="sg-08842bf080121c1fa" # replace with your security group  ID
 AMI_ID="ami-0220d79f3f480ecf5" # replace with your AMI_ID
 ZONE_ID="Z0124921233HXUIKL614B" # replace with your hosted zone ID
-DOMAIN_NAME="yasmitha.co.in" # replace your DOMAIN_NAME
+DOMAIN_NAME="yashmitha.co.in" # replace your DOMAIN_NAME
 
 for instance in $@
 do
@@ -30,7 +30,7 @@ do
             --query 'Reservations[].Instances[].PrivateIpAddress' \
             --output text
         )
-        RECORD_NAME="$instance.$DOMAIN_NAME" # mongodb.daws88s.online
+        RECORD_NAME="$instance.$DOMAIN_NAME" # mongodb.yasmitha.co.in
     fi
 
     echo "IP Address: $IP"
